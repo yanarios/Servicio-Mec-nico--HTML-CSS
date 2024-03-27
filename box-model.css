@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(51, 50, 56);
+}
+#contenedor {
+    background-color: white;
+    width: 1500px;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #2c3d99;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+#logo1{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    float: left;
+}
+#menu {
+    margin-right: 170px;
+    float: right;
+}
+
+#menu td a{
+    text-align: center;
+    color: white;
+    margin-right: 40px;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid white;
+}
+  
+th, td {
+    border: 2px solid white;
+    padding: 8px;
+    text-align: center;
+    height: 35px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 500px; /* Establece la altura deseada para tu slider */
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Permite superponer las diapositivas */
+    opacity: 0; /* Inicialmente oculta todas las diapositivas */
+    animation: slide 15s linear infinite; /* Cambia la duración y la animación según tus preferencias */
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s; /* Retraso para la primera diapositiva */
+}
+
+.slide:nth-child(2) {
+    animation-delay: 4s; /* Retraso para la segunda diapositiva */
+}
+
+.slide:nth-child(3) {
+    animation-delay: 8s; /* Retraso para la tercera diapositiva */
+}
+
+.slide:nth-child(4) {
+    animation-delay: 12s; /* Retraso para la cuarta diapositiva */
+}
+
+.slide:nth-child(5) {
+    animation-delay: 16s; /* Retraso para la quinta diapositiva */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    0%, 100% {
+        opacity: 0; /* Inicia y termina con todas las diapositivas ocultas */
+    }
+    
+    20%, 25% {
+        opacity: 1; /* Muestra la primera diapositiva, las demas son igual */
+    }
+    
+    45%, 50% {
+        opacity: 1; 
+    }
+    
+    70%, 75% {
+        opacity: 1; 
+    }
+    
+    95%, 100% {
+        opacity: 1; 
+    }
+}
+
+h1 {
+    text-align: center;
+    color: rgb(233, 145, 30);
+    font-size: 3vw;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content:space-between;
+    margin: 10px; /* Espacio entre las tarjetas */
+}
+
+.tarjetas {
+    flex: 1;/* Ancho de cada tarjeta con espacio entre ellas */
+    background-color: #ffffff;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    box-sizing: border-box;
+    max-width: calc(33.333% - 10px);
+    text-align: center;
+}
+
+.tarjetas h2,
+.tarjetas p,
+.tarjetas h3 {
+    margin: 0;
+}
+
+#servicios {
+    width: 100%;
+}
+.tarjetas h2{
+    background-color: #2c3d99;
+    font-size: 30px;
+    color: #ffffff;
+}
+.tarjetas p {
+    font-size: 20px;
+}
+.tarjetas h3 {
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #5869c7;
+    border: 1px solid #0a0a0a;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(30, 30, 71);
+    justify-content: space-between;
+    height: 150px;
+}
+
+#pieizq{
+    color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+#pieder {
+    color: #ffffff;
+    float: right;
+    margin-right: 250px;
+    margin-top: 40px;
+    text-align: center;
+}
